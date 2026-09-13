@@ -16,4 +16,4 @@ Build an isolated lab using VMware with at least one Linux VM and one Windows VM
 The connectivity failure occurred not due to a network misconfiguration; it was Windows Defender Firewall silently dropping inbound ICMP by default. In a SOC context, this is the same instinct behind alert triage: a system not responding doesn't automatically mean it's down or compromised. It might just mean a control is doing exactly what it's supposed to do. Checking the control layer before escalating saves time and avoids false alarms.
 
 ## Evidence
-📄 [Full report with screenshots](./Day-1-SOC-Lab-Report.pdf)
+📄 [Full report with screenshots](./Day-1-Lab-Setup.pdf)

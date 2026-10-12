@@ -1,8 +1,8 @@
 # SOC Internship Labs: TriosCyber
 
-Daily hands-on labs from a month-long SOC analyst internship at TriosCyber. Each day is a separate task: set up, scan, capture, hunt through logs, triage, and write it up as a report. A final project follows Day 30.
+Daily hands-on labs from a 30-day SOC analyst internship at TriosCyber. Each day is a separate task: set up, scan, capture, hunt through logs, triage, and write it up as a report. The series ends with a final end-to-end investigation on Day 30.
 
-Every folder holds a short summary of the task and what I found, plus the full report as a PDF with screenshots.
+Every folder holds a short summary of the task and what I found, plus the full report as a PDF with screenshots. Where a task could not be run live (for example, Wazuh work, because I could not deploy a manager), the report says so plainly.
 
 ## Progress
 | Day | Task | Skill shown |
@@ -41,7 +41,32 @@ Every folder holds a short summary of the task and what I found, plus the full r
 ## Lab environment
 - VMware Workstation Pro on a Windows host
 - Kali Linux, Windows 11 and Metasploitable 2 virtual machines on one isolated NAT network
-- Tools so far: Nmap, Wireshark, Windows Event Viewer, journalctl, grep, awk, sort
+- Ubuntu Server VM (used for the Wazuh installation attempt)
+
+## Tools covered
+
+**Network analysis**
+- Nmap (scanning and service discovery)
+- Wireshark (packet filtering, protocol identification, TCP connection analysis)
+
+**Windows and Linux logs**
+- Windows Event Viewer (Event IDs 4624, 4625, 4672, 4720, 4732, 7040 and others)
+- PowerShell and Command Prompt (`wevtutil`, `Get-WinEvent`, `auditpol`, `Get-FileHash`, `net` commands)
+- Linux command line (`journalctl`, `grep`, `awk`, `sort`) for authentication log analysis
+- Python `http.server` logs for web request inspection
+
+**SIEM and detection**
+- Splunk (SPL searches, stats, correlation logic)
+- Wazuh (architecture, ruleset, FIM, dashboard filtering, agent enrollment, VirusTotal integration). Studied and documented; the manager was not deployed in my lab, so Wazuh work is theoretical and is labeled that way.
+- Correlation rule design and a scoring-based alert prioritization sheet (spreadsheet)
+
+**Threat intelligence and frameworks**
+- MITRE ATT&CK (T1110.001, T1136.001, T1098.007)
+- VirusTotal and MISP warninglists (IOC enrichment)
+
+**Investigation and reporting**
+- Evidence collection with chain of custody and SHA-256 hashing
+- Incident reports, severity rating, and escalation decisions
 
 ## About
 I'm Amrita Pathak, a technical content writer building hands-on SOC and GRC experience. More about me is on my [GitHub profile](https://github.com/amrita-pathak-cyber).

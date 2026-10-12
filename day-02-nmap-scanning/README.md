@@ -21,4 +21,4 @@ Run an Nmap scan only against your own lab VM. Identify live hosts, open ports a
 Every service on this host was there by design, so nothing counted as unauthorized. The real work was judging severity. Two of the critical findings, vsftpd and UnrealIRCd, were backdoors planted in the downloadable software itself. The version banner was the only warning sign, and no configuration change could fix them. On a real host, a root shell like port 1524 means isolate the machine first and open a ticket after.
 
 ## Evidence
-📄 [Full report with screenshots](./Day-2-Nmap-Scanning-Report.pdf)
+📄 [Full report with screenshots](./Day-2-Nmap-Scanning-and-Service-Discovery.pdf)

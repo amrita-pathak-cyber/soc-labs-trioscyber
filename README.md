@@ -37,7 +37,6 @@ Every folder holds a short summary of the task and what I found, plus the full r
 | 28 | [Threat Intelligence / IOC Enrichment](./day-28-threat-intelligence-ioc-enrichment) | Enriched the EICAR hash with VirusTotal and MISP; recorded the context that changes analyst priority |
 | 29 | [SOC Incident Report](./day-29-soc-incident-report) | Consolidated incident report for INC-20260929-001: severity, analysis, actions, escalation decision, recommendations |
 | 30 | [Final Practical SOC Investigation](./day-30-final-practical-soc-investigation) | End-to-end investigation of a simulated backdoor admin account: triage, evidence, ATT&CK mapping, containment, closure |
-More days are added as they are completed.
 
 ## Lab environment
 - VMware Workstation Pro on a Windows host

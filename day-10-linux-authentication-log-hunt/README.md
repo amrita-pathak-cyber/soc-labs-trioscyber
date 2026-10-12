@@ -31,4 +31,4 @@ Generate or identify authentication activity on a Linux VM, then use `journalctl
 The same question, whether a login attempt failed or succeeded and when, has different answers in different places. On Linux, counting failure lines undercounts the passwords tried. A string of sudo failures doesn't lock anyone out. A session with no password prompt is not an unexplained escalation, because it traces back to a login that happened minutes earlier. An analyst who carries Windows assumptions onto a Linux host will misjudge the severity of what they find. Learn the concept first, then check how each platform records it.
 
 ## Evidence
-📄 [Full report with screenshots](./Day-10-Linux-Authentication-Log-Hunt.pdf)
+📄 [Full report with screenshots (PDF, use the download icon if the preview doesn't load)](./Day-10-Linux-Authentication-Log-Hunt.pdf)
